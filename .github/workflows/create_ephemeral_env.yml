@@ -2,7 +2,7 @@ name: Create Ephemeral Env CI/CD
 on:
   pull_request:
     branches: [ master ]
-    types: [opened]
+    types: [assigned, opened, synchronize, reopened]
 
 env:
   DOMAIN_NAME: ${{ secrets.DOMAIN_NAME }}
